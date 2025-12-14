@@ -5,7 +5,7 @@ def create_db():
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="your_password"
+            password="Kapule@1"
         )
         cursor = mydb.cursor()
         
