@@ -1,11 +1,11 @@
 import mysql.connector
 
-def create_database():
-    try:     
+def create_db():
+    try:
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Kapule@1"
+            password="your_password"
         )
         cursor = mydb.cursor()
         
@@ -21,5 +21,5 @@ def create_database():
             mydb.close()
 
 if __name__ == "__main__":
-    create_database()
+    create_db()
     
